@@ -1,3 +1,23 @@
+.local{
+    padding: 0.94rem 0rem;
+    text-align: center;
+    background-color: #EAEAEA;
+    box-shadow: inset #686868 0.06rem 0.3rem grey;
+    color: #353535;
+    font-weight: bold;
+}
+
+.reser{
+    height:15rem;
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1rem;
+}
+
+
 .card__img{
     height:12rem;
     width: 100%;
