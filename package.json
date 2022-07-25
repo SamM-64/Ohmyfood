@@ -1,0 +1,21 @@
+{
+  "name": "ohmyfood",
+  "version": "1.0.0",
+  "description": "Dynamisez une page web avec des animations CSS",
+  "main": "index.js",
+
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./publics/css/style.css --style compressed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SamM-64/OhMyFood.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SamM-64/OhMyFood/issues"
+  },
+  "homepage": "https://github.com/SamM-64/OhMyFood#readme"
+}
+
