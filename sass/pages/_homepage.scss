@@ -77,8 +77,8 @@
        display: flex;
        justify-content: space-around;
        margin-right: 2rem;
+       white-space: nowrap;
     }
-   
     .fonc__lists{
         padding:1.5rem;
         width: 15rem;
@@ -87,13 +87,31 @@
         box-shadow: 0 2px 5px grey;
         font-weight: bold;
         list-style-type: none;
-        text-align: center;
-       
-        
-        
+        margin-top: 2rem;
+    }
     
+    .fonc__lists::before{
+        content: counter(section);
+        counter-increment: section;
+        margin-left: -40px;
+        border-radius: 50%;
+        color: white;
+        background-color: #9356DC;
+        padding: 0.24rem 0.6rem;
+}
+
+    .fonc__lists i{
+        margin-right: 2rem;
+    }
+
+    i{
+        margin-left: 1rem;
     }
 }
+
+
+
+
 .card__img{
     height:12rem;
     width: 100%;
