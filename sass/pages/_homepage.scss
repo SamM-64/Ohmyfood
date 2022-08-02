@@ -1,45 +1,45 @@
-// Loader
-.container {
-  height: 80%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    width : 100%;
-}
+// // Loader
+// .container {
+//   height: 80%;
+//     display: flex;
+//     flex-direction: column;
+//     align-items: center;
+//     justify-content: center;
+//     position: absolute;
+//     width : 100%;
+// }
 
-$size: 3vh;
-$anim-dur: 1000ms;
-$anim-delay: 200ms;
+// $size: 3vh;
+// $anim-dur: 1000ms;
+// $anim-delay: 200ms;
 
-.load {
-    width: $size * 10;
-    height: $size* 7.5;
-    display: flex;
-    justify-content: space-evenly;
-    margin-bottom: 0;
-    &__bar {
-        background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);;
-        height: 100%;
-        width: $size;
-        animation: bars $anim-dur backwards infinite alternate ease-in-out;
-        @for $i from 1 through 5 {
-            &--#{$i} {
-                animation-delay: $anim-delay * $i;
-            }
-            }
-        }
-        }
-@keyframes bars {
-    0% { 
-        transform: scaleY(0.5);
+// .load {
+//     width: $size * 10;
+//     height: $size* 7.5;
+//     display: flex;
+//     justify-content: space-evenly;
+//     margin-bottom: 0;
+//     &__bar {
+//         background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);;
+//         height: 100%;
+//         width: $size;
+//         animation: bars $anim-dur backwards infinite alternate ease-in-out;
+//         @for $i from 1 through 5 {
+//             &--#{$i} {
+//                 animation-delay: $anim-delay * $i;
+//             }
+//             }
+//         }
+//         }
+// @keyframes bars {
+//     0% { 
+//         transform: scaleY(0.5);
 
-    }  
-    100% { 
-        transform: scaleY(1.0);  
-    }
-}
+//     }  
+//     100% { 
+//         transform: scaleY(1.0);  
+//     }
+// }
 
 // localisation
 .local{
@@ -53,58 +53,54 @@ $anim-delay: 200ms;
 
 // reservation
 .reser{
-    height:20rem;
-    background-color: #F6F6F6;
+    height:16rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     align-items: center;
     font-size: 1.2rem;
+    margin-top: 2rem;
 }
 
-.fonc{
-    display:flex;
-    justify-content: center;
-    text-align: center;
+.fonc__container{
+    height: 12rem;
+    align-items: center;
+    background-color: #fff;
+    padding: 15px 0px;
 
-    &.fonc__container{
-        max-width: 1280px;
-        margin: auto;
-        position: relative;
-    }
-}
-
-   
-.fonc__lists{
-    padding:1.5rem;
-    margin:1rem 0 1rem 0.75rem;
-    width: 300px;
-    border-radius: 1.25rem;
-    background-color: #f6f6f6;
-    box-shadow: 0 2px 5px grey;
-    font-weight: bold;
-    list-style-type: none;
-    
-
-    &.fonc__lists:before {
-        background: #9356dc;
-        height: 1.5rem;
-        width: 1.5rem;
-        border-radius: 100px;
+    h2{
         display: flex;
+        margin-top: 1.5rem;
         justify-content: center;
-        align-items: center;
-        color: #fff;
-        position: absolute;
+    }
+
+    .fonc__list{
+       display: flex;
+       justify-content: space-around;
+       margin-right: 2rem;
+    }
+   
+    .fonc__lists{
+        padding:1.5rem;
+        width: 15rem;
+        border-radius: 1.5rem;
+        background-color: #f6f6f6;
+        box-shadow: 0 2px 5px grey;
+        font-weight: bold;
+        list-style-type: none;
+        text-align: center;
+       
         
+        
+    
     }
 }
-
-
 .card__img{
     height:12rem;
     width: 100%;
     border: 0 solid transparent;
-    border-radius: 1 rem 1rem 0 0;
+    border-radius: 1rem 1rem 0 0;
     object-fit: cover;
 }
+
+
+
