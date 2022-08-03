@@ -1,45 +1,3 @@
-// // Loader
-// .container {
-//   height: 80%;
-//     display: flex;
-//     flex-direction: column;
-//     align-items: center;
-//     justify-content: center;
-//     position: absolute;
-//     width : 100%;
-// }
-
-// $size: 3vh;
-// $anim-dur: 1000ms;
-// $anim-delay: 200ms;
-
-// .load {
-//     width: $size * 10;
-//     height: $size* 7.5;
-//     display: flex;
-//     justify-content: space-evenly;
-//     margin-bottom: 0;
-//     &__bar {
-//         background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);;
-//         height: 100%;
-//         width: $size;
-//         animation: bars $anim-dur backwards infinite alternate ease-in-out;
-//         @for $i from 1 through 5 {
-//             &--#{$i} {
-//                 animation-delay: $anim-delay * $i;
-//             }
-//             }
-//         }
-//         }
-// @keyframes bars {
-//     0% { 
-//         transform: scaleY(0.5);
-
-//     }  
-//     100% { 
-//         transform: scaleY(1.0);  
-//     }
-// }
 
 // localisation
 .local{
@@ -99,7 +57,7 @@
         color: white;
         background-color: #9356DC;
         padding: 0.24rem 0.6rem;
-}
+    }
     .fonc__lists i{
         margin-right: 2rem;
     }
