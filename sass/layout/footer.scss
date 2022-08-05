@@ -1,0 +1,39 @@
+footer {
+    background-color: #354146;
+   
+    color: white;
+    display: flex;
+    justify-content: center;
+  
+  }
+    h4 {
+      font-family: ($font-footer);
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin-left: 4.5rem;
+    }
+    ul {
+      list-style-type: none;
+     
+  
+      li {
+        padding: 5px 0 5px 0;
+        line-height: 1.5;
+  
+        a {
+          color: white;
+          display: flex;
+          justify-content: center;
+          text-decoration: none;
+        }
+          
+        }
+      }
+    
+  
+      .fa-utensils {
+        margin-right: 12px;
+      }
+      .fa-handshake-angle {
+        margin-right: 5px;
+      }
