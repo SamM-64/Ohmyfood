@@ -27,9 +27,9 @@
     padding: 15px 0px;
 
     h2{
-        display: flex;
+        @include h2-style;
         margin-top: 1.5rem;
-        justify-content: center;
+       
     }
 
     .fonc__list{
@@ -47,8 +47,10 @@
         font-weight: bold;
         list-style-type: none;
         margin-top: 2rem;
+        &:hover{
+          @include button-hover;
+        }
     }
-    
     .fonc__lists::before{
         content: counter(section);
         counter-increment: section;
@@ -69,11 +71,13 @@
 
 
 .restaurants__container{
-    padding: 1.5rem 1.5rem;
+   padding: 2rem;
 
   .restaurants__title{
-    display: flex;
-    justify-content: center;
+    @include h2-style;
+    margin-bottom: 2rem;
+    
+    
   }
 
   .cards {
@@ -92,6 +96,7 @@
     border-radius: 1rem;
     position: relative;
     display: block;
+    box-shadow: 2px 2px 2px lightgrey;
   
     &__img {
       height: 12rem;
