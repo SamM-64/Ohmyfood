@@ -1,17 +1,16 @@
 footer {
     background-color: #354146;
-    padding: 0.5rem;
+   
     color: white;
     display: flex;
     justify-content: center;
-    padding-top: 2rem;
+  
   }
-    span {
+    h4 {
       font-family: ($font-footer);
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       font-weight: 500;
-      margin-left: 5rem;
-      padding-top: 2rem;
+      margin-left: 4.5rem;
     }
     ul {
       list-style-type: none;
