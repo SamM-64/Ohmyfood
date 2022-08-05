@@ -7,7 +7,13 @@
     background-color: ($color-tertiary);
     color: #078C6B;
     font-weight: bold;
-    font-size: .9em;
     padding-top: 0.5rem;
     margin-top: 0.5rem;
+    animation: clignote 550ms 0ms linear alternate infinite;
   }
+  @keyframes clignote {  
+    50% { opacity: 0; }
+   
+  }
+
+  
