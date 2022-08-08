@@ -76,8 +76,6 @@
   .restaurants__title{
     @include h2-style;
     margin-bottom: 2rem;
-    
-    
   }
 
   .cards {
@@ -120,11 +118,36 @@
       margin: 0;
     }
 
-   a{
-    text-decoration: none;
-      color: black;
-   }
+    a{
+      text-decoration: none;
+        color: inherit;
+     }
+    }
+  
+.card__heart {
+    stroke: black;
+    cursor: pointer;
+   
+    
   }
+  .far-heart {
+ 
+  stroke: none;
+ 
+  
+}
+.fa-heart {
+    width: 5rem;
+   
+    &:hover {
+      opacity: 0;
+      transition: 0.5s;
+      color:linear-gradient(0deg, $color-tertiary, $color-secondary);;
+      
+    }
+}
+
+  
   
 
 
