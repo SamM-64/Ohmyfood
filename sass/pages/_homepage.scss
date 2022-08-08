@@ -106,7 +106,7 @@
     }
   
     &__content {
-      padding: 1rem;
+      padding: 0.8rem;
     }
   
     &__title {
@@ -124,28 +124,7 @@
      }
     }
   
-.card__heart {
-    stroke: black;
-    cursor: pointer;
-   
-    
-  }
-  .far-heart {
- 
-  stroke: none;
- 
-  
-}
-.fa-heart {
-    width: 5rem;
-   
-    &:hover {
-      opacity: 0;
-      transition: 0.5s;
-      color:linear-gradient(0deg, $color-tertiary, $color-secondary);;
-      
-    }
-}
+
 
   
   
