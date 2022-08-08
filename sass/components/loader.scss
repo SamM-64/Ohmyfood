@@ -1,17 +1,29 @@
 // Loader
-.container {
-  height: 80%;
+.container{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: hsla(0,0%,100%,.9);
+    animation: load .01s;
+    animation-delay: 1.75s;
+    animation-fill-mode: both;
     display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    width : 100%;
 }
 
+@keyframes load{
+    100% {
+      opacity: 0;
+      z-index: -10;
+    }
+  } 
+
 $size: 3vh;
-$anim-dur: 1000ms;
-$anim-delay: 200ms;
+$anim-dur: 600ms;
+$anim-delay: 150ms;
 
 .load {
     width: $size * 10;
@@ -23,10 +35,11 @@ $anim-delay: 200ms;
         background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);;
         height: 100%;
         width: $size;
-        animation: bars $anim-dur backwards infinite alternate ease-in-out;
+        animation: bars $anim-dur forwards alternate 2s ease-in-out;
         @for $i from 1 through 5 {
             &--#{$i} {
                 animation-delay: $anim-delay * $i;
+                
             }
             }
         }
@@ -34,9 +47,15 @@ $anim-delay: 200ms;
 @keyframes bars {
     0% { 
         transform: scaleY(0.5);
+        opacity: 0.6;
 
-    }  
+    } 
     100% { 
-        transform: scaleY(1.0);  
+        transform: scaleY(1.0); 
+        opacity: 0.3;
+        visibility: hidden;
+        
     }
 }
+
+

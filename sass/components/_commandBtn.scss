@@ -1,3 +1,9 @@
+.wrap__btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 .command__btn{
     border:0;
     padding: 0.75rem 1.5rem;
@@ -8,5 +14,12 @@
     color: #fff;
     background-color: #686868;
     background-image: linear-gradient(0deg, $color-primary, $color-secondary);
-    margin-top: 2rem;
+    margin: 2rem 0;
+    
+      
+      &:hover {
+        @include button-hover;
+       
+      }
 }
+
