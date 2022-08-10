@@ -1,11 +1,8 @@
 footer {
     background-color: #354146;
-   
     color: white;
     display: flex;
     justify-content: center;
-  
-  }
     h4 {
       font-family: ($font-secondary);
       font-size: 1.5rem;
@@ -26,14 +23,14 @@ footer {
           justify-content: center;
           text-decoration: none;
         }
-          
         }
       }
-    
-  
       .fa-utensils {
-        margin-right: 12px;
+        margin-right: 0.75rem;
       }
       .fa-handshake-angle {
-        margin-right: 5px;
+        margin-right: 0.3rem;
       }
+  }
+    
+  

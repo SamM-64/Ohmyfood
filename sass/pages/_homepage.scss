@@ -24,7 +24,7 @@
     height: 12rem;
     align-items: center;
     background-color: #fff;
-    padding: 15px 0px;
+    padding: 0.9rem 0;
 
     h2{
         @include h2-style;
@@ -43,27 +43,26 @@
         width: 15rem;
         border-radius: 1.5rem;
         background-color: #f6f6f6;
-        box-shadow: 0 2px 5px grey;
+        box-shadow: 0 0.12rem 0.3rem grey;
         font-weight: bold;
         list-style-type: none;
         margin-top: 2rem;
         &:hover{
           @include button-hover;
         }
+        &::before{
+          content: counter(section);
+          counter-increment: section;
+          margin-left: -2.5rem;
+          border-radius: 50%;
+          color: white;
+          background-color: #9356DC;
+          padding: 0.24rem 0.6rem;
+        }
     }
-    .fonc__lists::before{
-        content: counter(section);
-        counter-increment: section;
-        margin-left: -40px;
-        border-radius: 50%;
-        color: white;
-        background-color: #9356DC;
-        padding: 0.24rem 0.6rem;
-}
     .fonc__lists i{
         margin-right: 2rem;
     }
-
     i{
         margin-left: 1rem;
     }
@@ -94,12 +93,12 @@
     border-radius: 1rem;
     position: relative;
     display: block;
-    box-shadow: 2px 2px 2px lightgrey;
+    box-shadow: 0.12rem 0.12rem 0.12rem lightgrey;
   
     &__img {
       height: 12rem;
       width: 100%;
-      border: transparent solid 0px;
+      border: transparent solid 0;
       border-radius: 1rem 1rem 0 0;
       box-shadow: none;
       object-fit: cover;

@@ -1,9 +1,7 @@
 /* Header */
 header {
     height: 4.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flexbox;
 
     .back{
         position: absolute;
