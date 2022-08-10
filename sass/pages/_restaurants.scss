@@ -51,20 +51,16 @@
         }
       }
   }
-  
   .menu__name{
     line-height: 0;
     font-size: 0.8rem;
     padding-left:1rem ;
   }
   .menu__price{
-    padding-right: 20px;
+    padding-right: 1.25rem;
     font-weight: bold;
-    padding-left: 7px;
 }
   }
-  
-
 .menu__card{
   height: 5rem;
   margin-top: 1.8rem;
@@ -81,25 +77,22 @@
     transform-origin: right;
 
     &:hover .menu__price {
-      padding-right: 70px;
+      padding-right: 4.3rem;
       transition: 0.5s ease ;
   }
   }
- 
-
   .menu__check {
       display: none;
       background: $color-tertiary;
-      border-radius: 0 15px 15px 0;
-      right: 0px;
-      padding: 0 13px;
+      border-radius: 0 0.9rem 0.0rem 0;
+      right: 0;
+      padding: 0 0.8rem;
       height: 100%;
       i {
-          font-size: 30px;
+          font-size: 1.8rem;
           color: white;
           transform: rotate(180deg);
           animation: rotate 0.5s both;
-        
       }
   }
 }

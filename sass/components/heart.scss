@@ -6,33 +6,26 @@
     text-align: center;
     float: right;
     bottom: 2rem;
-    
+    &:hover .far.fa-heart {
+      transition-property: transform;
+      transition-duration: 200ms;
+      transition-delay: 300ms;
+      transform: scale(0);
+    }
+    &:hover .fa.fa-heart{
+      transform: scale(1)
+    }
   }
-  
-  .heart:hover .far.fa-heart {
-    transition-property: transform;
-    transition-duration: 200ms;
-    transition-delay: 300ms;
-    transform: scale(0);
-    
-  }
-  
-  .heart:hover .fa.fa-heart {
-    transform: scale(1)
-  }
-  
   .far.fa-heart {
     position: absolute;
     left: 0;
     top: 0;
     color: inherit;
-
   }
-  
   .fa.fa-heart {
     background: linear-gradient( #ED74DA, #9356DC);
-    -webkit-background-clip: text;
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
     transition-property: transform;
     transition-duration: 500ms;
