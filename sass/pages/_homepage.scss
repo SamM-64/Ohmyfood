@@ -32,7 +32,7 @@
     background-color: #fff;
     padding: 0.9rem 0;
     @media (max-width:480px) {
-      height: 18rem;
+      height: 22rem;
      }
     h2{
         @include h2-style;
@@ -64,9 +64,8 @@
         list-style-type: none;
         margin-top: 2rem;
         @media (max-width:480px) {
-       padding:1rem;
-       margin-top:1rem;
-       margin-left:1rem;
+        padding:1.5rem;
+        margin-top:1rem;
         }
        
         &:hover{
@@ -80,6 +79,7 @@
           color: white;
           background-color: #9356DC;
           padding: 0.24rem 0.6rem;
+         
         }
     }
     .fonc__lists i{
