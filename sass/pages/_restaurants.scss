@@ -6,6 +6,7 @@
         position: fixed;
 }
 
+// Menu
 .menu__container{
     box-sizing: border-box;
     width: 100%;
@@ -21,6 +22,7 @@
 
 }
 
+// Card-menu
   .menu {
     &__header {
       padding: 1rem 2rem 0 1rem;
@@ -70,6 +72,7 @@
   align-items: center;
   cursor: pointer;
   justify-content: space-between;
+  animation: opacity 1s both;
   &:hover .menu__check {
     @include flexbox;
     animation: slide 0.5s ease ;
@@ -106,6 +109,37 @@
     }
 }
 
+// animation card opacity
+@keyframes opacity {
+  0% {
+            opacity: 0;
+  }
+  100% {
+            opacity: 1;
+  }
+}
+
+.menu__card:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.menu__card:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.menu__card:nth-child(3){
+  animation-delay: 0.3s;
+}
+
+.menu__card:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.menu__card:nth-child(5) {
+  animation-delay: 0.5s;
+}
+
+// Animation bouton check 
 @keyframes rotate {
   0% {
       transform: rotate(0);
