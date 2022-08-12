@@ -2,6 +2,11 @@
 header {
     height: 4.3rem;
     @include flexbox;
+    
+    .header{
+        position: fixed;
+        z-index: 1;
+    }
 
     .back{
         position: absolute;
@@ -10,7 +15,9 @@ header {
         top: 1.5rem;
         color: inherit;
     }
-}
+    
+} 
+
 .header__logo{
         height: 1.8rem;
 }
