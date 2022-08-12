@@ -4,6 +4,9 @@
         height: 100%;
         object-fit: cover;
         position: fixed;
+        @media (max-width:480px) {
+          height: 30%;
+         }
 }
 
 // Menu
@@ -18,8 +21,10 @@
     position: relative;
     top: 9.3rem;
     background-color: #f6f6f6;
-    border-radius: 1rem 1rem 0 0;
-
+    border-radius: 2rem 2rem 0 0;
+    @media (max-width:480px) {
+      margin-top: 5rem;
+     }
 }
 
 // Card-menu
