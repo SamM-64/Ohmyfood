@@ -39,7 +39,7 @@
         margin-top: 1.5rem;
         @media (max-width:480px) {
          justify-content: start;
-         margin-left: 1rem;
+         margin-left: 1.6rem;
           
         }
     }
@@ -69,7 +69,7 @@
         margin-top:1rem;
         }
         @media (min-width:600px )and (max-width:850px){
-          width:11rem;
+          width:11.5rem;
         }
        
         &:hover{
@@ -89,7 +89,7 @@
     .fonc__lists i{
         margin-right: 2rem;
         @media (max-width:900px){
-          margin-right: 0.8rem;
+          margin-right: 0.6rem;
           font-size: 0.7rem;
         }
     }
@@ -105,9 +105,8 @@
   .restaurants__title{
     @include h2-style;
     margin-bottom: 2rem;
-    @media (min-width:300px) {
-    flex: 0 0 auto;
-       margin-left:1.5rem;
+    @media (min-width:300px) and (max-width:800px) {
+    display:block;
   }
   }
   .cards {
