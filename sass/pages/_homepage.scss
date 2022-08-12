@@ -39,18 +39,19 @@
         margin-top: 1.5rem;
         @media (max-width:480px) {
          justify-content: start;
-         margin-left: 1rem;
+         margin-left: 1.6rem;
           
         }
     }
 
     .fonc__list{
        display: flex;
-       justify-content: space-around;
+       justify-content: space-between;
        margin-right: 2rem;
        white-space: nowrap;
        @media (max-width:480px) {
         flex-direction: column;
+        align-items: center;
        }
        
     }
@@ -63,9 +64,12 @@
         font-weight: bold;
         list-style-type: none;
         margin-top: 2rem;
-        @media (max-width:480px) {
+        @media (min-width:300px){
         padding:1.5rem;
         margin-top:1rem;
+        }
+        @media (min-width:600px )and (max-width:850px){
+          width:11.5rem;
         }
        
         &:hover{
@@ -84,6 +88,10 @@
     }
     .fonc__lists i{
         margin-right: 2rem;
+        @media (max-width:900px){
+          margin-right: 0.6rem;
+          font-size: 0.7rem;
+        }
     }
     i{
         margin-left: 1rem;
@@ -97,9 +105,8 @@
   .restaurants__title{
     @include h2-style;
     margin-bottom: 2rem;
-    @media (max-width:480px) {
-    flex: 0 0 auto;
-       margin-left:1.5rem;
+    @media (min-width:300px) and (max-width:800px) {
+    display:block;
   }
   }
   .cards {

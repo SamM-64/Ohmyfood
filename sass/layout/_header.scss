@@ -10,7 +10,17 @@ header {
         top: 1.5rem;
         color: inherit;
     }
-}
+    
+} 
+
 .header__logo{
         height: 1.8rem;
+}
+
+.header{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: $body-color;
+    z-index: 3;
 }
