@@ -12,8 +12,8 @@
     color: #fff;
     background-color: #686868;
     background-image: linear-gradient(0deg, $color-primary, $color-secondary);
-    margin: 2rem 0 2rem 2rem;
-    @media (max-width:480px) {
+    margin: 2rem 0 2rem 0;
+    @media (max-width:500px) {
      margin:0;
      font-size:0.8rem;
      }
@@ -25,7 +25,7 @@
 }
 
 #command__btn{
-  @media (max-width:480px) {
+  @media (max-width:500px) {
     font-size:0.8rem;
     margin: 2rem 0 2rem 1rem;
     }

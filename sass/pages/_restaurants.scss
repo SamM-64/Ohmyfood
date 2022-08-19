@@ -4,7 +4,7 @@
         height: 100%;
         object-fit: cover;
         position: fixed;
-        @media (max-width:480px) {
+        @media (max-width:500px) {
           height: 30%;
          }
 }
@@ -22,8 +22,9 @@
     top: 9.3rem;
     background-color: #f6f6f6;
     border-radius: 2rem 2rem 0 0;
-    @media (max-width:480px) {
+    @media (max-width:500px) {
       margin-top: 5rem;
+      
      }
 }
 
@@ -102,12 +103,12 @@
   }
 
   h3{
-    @media (max-width:480px) {
+    @media (max-width:500px) {
       font-size:1rem;
      }
     }
     p{
-     @media (max-width:480px) {
+     @media (max-width:500px) {
       font-size:.8rem;
      
      }
