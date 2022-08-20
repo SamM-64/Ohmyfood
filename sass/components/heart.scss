@@ -3,7 +3,7 @@
     font-size: 2rem;
     right: 0.9rem;
     height: 1.8rem;
-    text-align: center;
+    // text-align: center;
     float: right;
     bottom: 2rem;
     &:hover .far.fa-heart {
@@ -20,7 +20,6 @@
     position: absolute;
     left: 0;
     top: 0;
-    color: inherit;
   }
   .fa.fa-heart {
     background: linear-gradient( #ED74DA, #9356DC);
