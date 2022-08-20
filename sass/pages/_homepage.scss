@@ -83,7 +83,7 @@
           margin-left: -2.5rem;
           border-radius: 50%;
           color: white;
-          background-color: #9356DC;
+          background-color: $color-primary;
           padding: 0.24rem 0.6rem;
          
         }
@@ -108,12 +108,11 @@
     @include h2-style;
     margin-bottom: 2rem;
     @media (max-width:500px)  {
-    display:block;
+   justify-content: flex-start;
   }
   }
   .cards {
     display: grid;
-    grid-template-columns: repeat(1, 1fr);
     column-gap: 2rem;
     row-gap: 2rem;
   
