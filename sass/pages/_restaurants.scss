@@ -12,8 +12,7 @@
 // Menu
 .menu__container{
     box-sizing: border-box;
-    width: 100%;
-    max-width: 800px;
+    max-width: 50rem;
     margin: 0 auto;
     padding-top:0.9rem;
     display: flex;
@@ -97,7 +96,6 @@
       i {
           font-size: 1.8rem;
           color: white;
-          transform: rotate(180deg);
           animation: rotate 0.5s both;
       }
   }
