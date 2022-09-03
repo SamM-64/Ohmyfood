@@ -23,9 +23,7 @@
   .fa.fa-heart {
     background: linear-gradient( #ED74DA, #9356DC);
     background-clip: text;
-    -webkit-background-clip: text;
-    color: transparent;
-    transition-property: transform;
+    background-color: transparents;
     transition-duration: 500ms;
     transform: scale(0);
     
