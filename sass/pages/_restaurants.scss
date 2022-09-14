@@ -81,10 +81,8 @@
   &:hover .menu__check {
     @include flexbox;
     animation: slide 0.5s ease ;
-    transform-origin: right;
-    &:hover .menu__price {
-      transition: 0.5s ease ;
-  }
+   
+ 
   }
   .menu__check {
       display: none;
