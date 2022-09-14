@@ -1,0 +1,21 @@
+.heart {
+    position: relative;
+    font-size: 2rem;
+    right: 0.9rem;
+    height: 1.8rem;
+    float: right;
+    bottom: 2rem;
+
+    .far.fa-heart {
+      cursor: pointer;
+      &:hover {
+        animation: fill 0.3s ease-in-out;
+        display: inline-block;
+        background:linear-gradient( $color-primary, $color-secondary);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        font-weight: bold;
+    }
+  }
+}
