@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Dynamisez une page web avec des animations CSS",
   "main": "index.js",
-
   "scripts": {
     "sass": "sass --watch ./sass/main.scss:./public/css/style.css --style compressed"
   },
@@ -16,6 +15,8 @@
   "bugs": {
     "url": "https://github.com/SamM-64/OhMyFood/issues"
   },
-  "homepage": "https://github.com/SamM-64/OhMyFood#readme"
+  "homepage": "https://github.com/SamM-64/OhMyFood#readme",
+  "dependencies": {
+    "sass": "^1.54.9"
+  }
 }
-
