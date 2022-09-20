@@ -43,7 +43,6 @@
     @media (max-width:500px) {
       justify-content: start;
       margin-left: 1.6rem;
-
     }
   }
 
@@ -73,9 +72,6 @@
     @media (max-width:500px) {
       margin-top: 1rem;
     }
-
-  
-
     &:hover {
       @include button-hover;
     }
