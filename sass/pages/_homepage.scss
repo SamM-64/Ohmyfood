@@ -1,166 +1,167 @@
-
 // localisation
-.local{
-    padding: 0.94rem 0rem;
-    text-align: center;
-    background-color: #EAEAEA;
-    box-shadow: inset #686868 0.06rem 0.3rem grey;
-    color: #353535;
-    font-weight: bold;
+.local {
+  padding: 0.94rem 0rem;
+  text-align: center;
+  background-color: #EAEAEA;
+  box-shadow: inset #686868 0.06rem 0.3rem grey;
+  color: #353535;
+  font-weight: bold;
 }
 
 // reservation
-.reser{
-    height:16rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    @media (max-width:500px) {
-      text-align: center;
-      white-space: pre-line;
-     }
-    
-  
+.reser {
+  height: 16rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1.2rem;
+  margin-top: 2rem;
+
+  @media (max-width:500px) {
+    text-align: center;
+    white-space: pre-line;
+  }
+
+
 }
 
 // fonctionnement
-.fonc__container{
-    height: 12rem;
-    align-items: center;
-    background-color: #fff;
-    padding: 0.9rem 0;
+.fonc__container {
+ 
+  align-items: center;
+  background-color: #fff;
+  padding: 0.9rem 0;
+
+  @media (max-width:500px) {
+    height: 22rem;
+  }
+
+  h2 {
+    @include h2-style;
+    margin-top: 1.5rem;
+
     @media (max-width:500px) {
-      height: 22rem;
-     }
-    h2{
-        @include h2-style;
-        margin-top: 1.5rem;
-        @media (max-width:500px) {
-         justify-content: start;
-         margin-left: 1.6rem;
-          
-        }
+      justify-content: start;
+      margin-left: 1.6rem;
+
+    }
+  }
+
+  .fonc__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+
+    @media (min-width:300px) and (max-width:600px) {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  .fonc__lists {
+    padding: 1.5rem;
+    width: 15rem;
+    margin: 1rem;
+    border-radius: 1.5rem;
+    background-color: #f6f6f6;
+    box-shadow: 0 0.12rem 0.3rem grey;
+    font-weight: bold;
+    list-style-type: none;
+    margin-top: 2rem;
+
+    @media (max-width:500px) {
+      margin-top: 1rem;
     }
 
-    .fonc__list{
-       display: flex;
-       justify-content: space-around;
-       margin-right: 2rem;
-       white-space: nowrap;
-       @media (max-width:500px) {
-        flex-direction: column;
-        align-items: center;
-      }
-      @media (max-width:900px) {
-        justify-content: space-between;
-     }
-       
+  
+
+    &:hover {
+      @include button-hover;
     }
-    .fonc__lists{
-        padding:1.5rem;
-        width: 15rem;
-        border-radius: 1.5rem;
-        background-color: #f6f6f6;
-        box-shadow: 0 0.12rem 0.3rem grey;
-        font-weight: bold;
-        list-style-type: none;
-        margin-top: 2rem;
-        @media (max-width:500px){
-        margin-top:1rem;
-        }
-        @media (min-width:500px )and (max-width:900px){
-          width:11.5rem;
-        }
-       
-        &:hover{
-          @include button-hover;
-        }
-        &::before{
-          content: counter(section);
-          counter-increment: section;
-          margin-left: -2.5rem;
-          border-radius: 50%;
-          color: white;
-          background-color: $color-primary;
-          padding: 0.24rem 0.6rem;
-         
-        }
+
+    &::before {
+      content: counter(section);
+      counter-increment: section;
+      margin-left: -2.5rem;
+      border-radius: 50%;
+      color: white;
+      background-color: $color-primary;
+      padding: 0.24rem 0.6rem;
+
     }
-    .fonc__lists i{
-        margin-right: 2rem;
-        @media (max-width:900px){
-          margin-right: 0.6rem;
-          font-size: 0.7rem;
-        }
+  }
+
+  .fonc__lists i {
+    margin-right: 2rem;
+
+    @media (max-width:900px) {
+      margin-right: 0.6rem;
+      font-size: 0.7rem;
     }
-    i{
-        margin-left: 1rem;
-    }
+  }
+
+  i {
+    margin-left: 1rem;
+  }
 }
 
 // Card restaurants
-.restaurants__container{
-   padding: 2rem;
+.restaurants__container {
+  padding: 2rem;
 
-  .restaurants__title{
+  .restaurants__title {
     @include h2-style;
     margin-bottom: 2rem;
-    @media (max-width:500px)  {
-   justify-content: flex-start;
+
+    @media (max-width:500px) {
+      justify-content: flex-start;
+    }
   }
-  }
+
   .cards {
     display: grid;
     column-gap: 2rem;
     row-gap: 2rem;
-    
-  
+
+
     @media (min-width:900px) {
       grid-template-columns: repeat(2, 1fr);
     }
   }
 }
-  .card {
-    background-color: white;
-    border-radius: 1rem;
-    position: relative;
-    display: block;
-    box-shadow: 0.12rem 0.12rem 0.12rem lightgrey;
-  
-    &__img {
-      height: 12rem;
-      width: 100%;
-      border: transparent solid 0;
-      border-radius: 1rem 1rem 0 0;
-      box-shadow: none;
-      object-fit: cover;
-    }
-  
-    &__content {
-      padding: 0.8rem;
-    }
-  
-    &__title {
-      margin: 0;
-      margin-bottom: 0.25rem;
-    }
-  
-    &__loc {
-      margin: 0;
-    }
 
-    a{
-      text-decoration: none;
-        color: inherit;
-     }
-    }
-  
+.card {
+  background-color: white;
+  border-radius: 1rem;
+  position: relative;
+  display: block;
+  box-shadow: 0.12rem 0.12rem 0.12rem lightgrey;
 
+  &__img {
+    height: 12rem;
+    width: 100%;
+    border: transparent solid 0;
+    border-radius: 1rem 1rem 0 0;
+    box-shadow: none;
+    object-fit: cover;
+  }
 
-  
-  
+  &__content {
+    padding: 0.8rem;
+  }
 
+  &__title {
+    margin: 0;
+    margin-bottom: 0.25rem;
+  }
 
+  &__loc {
+    margin: 0;
+  }
 
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+}
