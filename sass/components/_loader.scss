@@ -20,9 +20,6 @@
     }
   } 
 
-$size: 3vh;
-$anim-dur: 1000ms;
-$anim-delay: 150ms;
 
 .load {
     width: $size * 8;
@@ -38,7 +35,6 @@ $anim-delay: 150ms;
         @for $i from 1 through 5 {
             &--#{$i} {
                 animation-delay: $anim-delay * $i;
-                
             }
             }
         }

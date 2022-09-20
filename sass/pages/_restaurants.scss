@@ -67,8 +67,7 @@
     padding-right: 1.25rem;
     font-weight: bold;
     min-width: 30px;
-    
-}
+  }
   
 .menu__card{
   height: 5rem;
@@ -79,7 +78,6 @@
   display: flex;
   align-items: center;
   cursor: pointer;
-  
   animation: opacity 1s both;
   &:hover .menu__check {
     @include flexbox;
