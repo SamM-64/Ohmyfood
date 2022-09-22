@@ -18,7 +18,7 @@ display: flex;
 flex-direction: column;
 position: relative;
 top: 9.3rem;
-background-color: #f6f6f6;
+background-color: $color-background;
 border-radius: 2rem 2rem 0 0;
 @media (max-width:500px) {
   margin-top: 5rem;
@@ -71,7 +71,7 @@ min-width: 30px;
 height: 5rem;
 margin-top: 1.8rem;
 border-radius: 0.9rem;
-background-color: white;
+background-color: $color-card;
 overflow: hidden;
 display: flex;
 align-items: center;

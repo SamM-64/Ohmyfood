@@ -1,6 +1,6 @@
 footer {
-  background-color: #354146;
-  color: white;
+  background-color: $color-footer;
+  color: $color-card;
   padding:0.3rem;
   @media (max-width:500px) {
     display: flex;
@@ -30,7 +30,7 @@ footer {
       
       
       a {
-        color: white;
+        color: $color-card;
         text-decoration: none;
       }
       }

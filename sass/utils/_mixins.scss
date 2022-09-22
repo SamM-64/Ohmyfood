@@ -20,6 +20,22 @@
     align-items: center;
 }
 
+@mixin shadow-loc{
+    box-shadow: inset #686868 0.06rem 0.3rem grey;
+    color: #353535;
+    font-weight: bold;
+}
+
+@mixin shadow-lists{
+    background-color: #f6f6f6;
+    box-shadow: 0 0.12rem 0.3rem grey;
+    font-weight: bold;
+}
+
+@mixin shadow-card{
+    box-shadow: 0.12rem 0.12rem 0.12rem lightgrey;
+}
+
 
 
 
