@@ -1,166 +1,167 @@
-
 .img__image {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        position: fixed;
-        @media (max-width:500px) {
-          height: 30%;
-         }
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	position: fixed;
+	@media (max-width:500px) {
+	  height: 30%;
+	 }
 }
 
 // Menu
 .menu__container{
-    box-sizing: border-box;
-    max-width: 50rem;
-    margin: 0 auto;
-    padding-top:0.9rem;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 9.3rem;
-    background-color: #f6f6f6;
-    border-radius: 2rem 2rem 0 0;
-    @media (max-width:500px) {
-      margin-top: 5rem;
-      
-     }
+box-sizing: border-box;
+max-width: 50rem;
+margin: 0 auto;
+padding-top:0.9rem;
+display: flex;
+flex-direction: column;
+position: relative;
+top: 9.3rem;
+background-color: #f6f6f6;
+border-radius: 2rem 2rem 0 0;
+@media (max-width:500px) {
+  margin-top: 5rem;
+ }
 }
 
 // Card-menu
-  .menu {
-    &__header {
-      padding: 1rem 2rem 0 1rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-    }
-  
-    &__title {
-      font-family: $font-secondary;
-      font-size: 1.5rem;
-    }
-  }
-  
-    .submenu {
-      padding: 0 1rem;
-      &__title{
-        font-size: 1rem;
-        margin-top: 2rem;
-        &::after{
-          content: "";
-          width: 3rem;
-          height: 0.25rem;
-          background-color: $color-tertiary;
-          position: absolute;
-          display: flex;
-          justify-content: left;
-        }
-      }
-  }
-  .menu__name{
-    line-height: 0;
-    padding-left:1rem ;
-    width: 100%;
-  }
-  .menu__price{
-    padding-right: 1.25rem;
-    font-weight: bold;
-    min-width: 30px;
-  }
-  
-.menu__card{
-  height: 5rem;
-  margin-top: 1.8rem;
-  border-radius: 0.9rem;
-  background-color: white;
-  overflow: hidden;
+.menu {
+&__header {
+  padding: 1rem 2rem 0 1rem;
   display: flex;
   align-items: center;
-  cursor: pointer;
-  animation: opacity 1s both;
-  &:hover .menu__check {
-    @include flexbox;
-    animation: slide 0.5s ease-in-out ;
-   
- 
-  }
-  .menu__check {
-      display: none;
-      background: $color-tertiary;
-      border-radius: 0 0.9rem 0.0rem 0;
-      right: 0;
-      padding: 0 0.8rem;
-      height: 100%;
-      i {
-          font-size: 1.8rem;
-          color: white;
-          animation: rotate 0.5s both;
-      }
-  }
+  justify-content: space-between;
+}
+&__title {
+  font-family: $font-secondary;
+  font-size: 1.5rem;
+}
+}
 
-  h3{
-    @media (max-width:500px) {
-      font-size:1rem;
-     }
-    }
-    p{
-     @media (max-width:500px) {
-      font-size:.8rem;
-     
-     }
-    }
+.submenu {
+  padding: 0 1rem;
+  &__title{
+	font-size: 1rem;
+	margin-top: 2rem;
+	&::after{
+	  content: "";
+	  width: 3rem;
+	  height: 0.25rem;
+	  background-color: $color-tertiary;
+	  position: absolute;
+	  display: flex;
+	  justify-content: left;
+	}
+  }
+}
+.menu__name{
+line-height: 0;
+padding-left:1rem ;
+width: 100%;
+}
+.menu__price{
+padding-right: 1.25rem;
+font-weight: bold;
+min-width: 30px;
+
+}
+
+.menu__card{
+height: 5rem;
+margin-top: 1.8rem;
+border-radius: 0.9rem;
+background-color: white;
+overflow: hidden;
+display: flex;
+align-items: center;
+cursor: pointer;
+animation: opacity 1s both;
+&:hover .menu__check {
+@include flexbox;
+animation: slide 0.5s ease-in-out both;
+}
+.menu__check {
+  display: none;
+  background: $color-tertiary;
+  border-radius: 0 0.9rem 0 0;
+  right: 0;
+  padding: 0 2rem;
+  height: 100%;
+  
+  i {
+	  font-size: 1.8rem;
+	  color: white;
+	  animation: rotate 1s ;
+	  transition: 0.4s ease-in-out;
+  }
+}
+
+h3{
+@media (max-width:500px) {
+  font-size:1rem;
+ }
+}
+p{
+ @media (max-width:500px) {
+  font-size:.8rem;
+ 
+ }
+}
 }
 
 // animation card opacity
 @keyframes opacity {
-  0% {
-            opacity: 0;
-  }
-  100% {
-            opacity: 1;
-  }
+0% {
+		opacity: 0;
+}
+100% {
+		opacity: 1;
+}
 }
 
 .menu__card:nth-child(1) {
-  animation-delay: 0.1s;
+animation-delay: 0.1s;
 }
 
 .menu__card:nth-child(2) {
-  animation-delay: 0.2s;
+animation-delay: 0.2s;
 }
 
 .menu__card:nth-child(3){
-  animation-delay: 0.3s;
+animation-delay: 0.3s;
 }
 
 .menu__card:nth-child(4) {
-  animation-delay: 0.4s;
+animation-delay: 0.4s;
 }
 
 .menu__card:nth-child(5) {
-  animation-delay: 0.5s;
+animation-delay: 0.5s;
 }
 
 // Animation bouton check 
 @keyframes rotate {
-  0% {
-      transform: rotate(0);
+0% {
+  transform: rotate(0);
 }
 100% {
-      transform: rotate(360deg);
-  }
+  transform: rotate(359deg);
+}
 }
 
-@keyframes slide {
-  0% {
-            transform: scaleX(0);
-  }
-  100% {
-            transform: scaleX(-50px);
-  }
+@keyframes slide
+{
+	0%
+	{
+		
+		transform: translateX(100px);
+	}
+	100%
+	{
+		transform: translateX(0px);
+	}
 }
-
 
   
 

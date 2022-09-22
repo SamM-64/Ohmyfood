@@ -1,47 +1,47 @@
 footer {
-    background-color: #354146;
-    color: white;
-    padding:0.3rem;
-    @media (max-width:500px) {
-      display: flex;
-      justify-content: flex-start;
-     }
-    h4 {
-      font-family: ($font-secondary);
-      font-size: 1.5rem;
-      font-weight: 500;
-      @include flexbox;
-      
-    }
-    ul {
-      list-style-type: none;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      padding: 0;
-      @media (max-width:500px){
-        display: block;
-        padding-left: 2rem;
-      }
-  
-      li {
-        padding: 5px 0 5px 0;
-        line-height: 1.5;
-        
-        
-        a {
-          color: white;
-          text-decoration: none;
-        }
-        }
-      }
-      .fa-utensils {
-        margin-right: 0.75rem;
-      }
-      .fa-handshake-angle {
-        margin-right: 0.3rem;
-      }
+  background-color: #354146;
+  color: white;
+  padding:0.3rem;
+  @media (max-width:500px) {
+    display: flex;
+    justify-content: flex-start;
+   }
+  h4 {
+    font-family: ($font-secondary);
+    font-size: 1.5rem;
+    font-weight: 500;
+    @include flexbox;
+    
   }
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    @media (max-width:500px){
+      display: block;
+      padding-left: 2rem;
+    }
+
+    li {
+      padding: 5px 0 5px 0;
+      line-height: 1.5;
+      
+      
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      }
+    }
+    .fa-utensils {
+      margin-right: 0.75rem;
+    }
+    .fa-handshake-angle {
+      margin-right: 0.3rem;
+    }
+}
 
     
   
