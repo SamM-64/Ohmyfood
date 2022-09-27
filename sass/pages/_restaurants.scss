@@ -77,6 +77,12 @@ min-width: 30px;
 	align-items: center;
 	cursor: pointer;
 	animation: opacity 1s both;
+	&:hover{
+		i {
+			color: white;
+			animation: rotate 0.5s ease ;
+		  }
+	  }
 	&:hover .menu__check {
 	  @include flexbox;
 	  margin-right: 0px;
@@ -91,13 +97,6 @@ min-width: 30px;
 	  border-radius: 0 0.9rem 0 0;
 	  padding: 0 2rem;
 	  height: 100%;
-	  &:hover{
-		i {
-			color: white;
-			animation: rotate 0.5s ease ;
-		  }
-	  }
-  
 	  i {
 		font-size: 1.8rem;
 		color: white;
