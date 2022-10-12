@@ -28,7 +28,7 @@
     justify-content: space-evenly;
     margin-bottom: 0;
     &__bar {
-        background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);;
+        background-image:linear-gradient(0deg, $color-tertiary, $color-secondary);
         height: 100%;
         width: $size;
         animation: bars $anim-dur forwards alternate  ease-in-out;
