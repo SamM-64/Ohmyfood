@@ -119,8 +119,8 @@
 .card {
   background-color: $color-card;
   border-radius: 1rem;
-  position: relative;
-  display: block;
+ 
+  
   @include shadow-card;
   &__img {
     height: 12rem;
